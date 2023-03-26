@@ -19,7 +19,8 @@
   /**
    * colors
    */
-
+  --fundo:	hsl(240, 5%, 6%);
+  --fundo2: hsl(240, 5%, 7%);
   --jet: hsl(0, 0%, 20%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -30,7 +31,7 @@
   --davys-gray: hsl(0, 0%, 33%);
   --field-drab: hsl(47, 98%, 22%);
   --red-crayola: hsl(356, 73%, 58%);
-  --golden-puppy: hsl(47, 100%, 49%);
+  --golden-puppy: hsl(230, 40%, 47%);
   --quick-silver: hsl(0, 0%, 63%);
   --sonic-silver: hsl(0, 0%, 44%);
   --eerie-black-1: hsl(0, 0%, 15%);
@@ -111,7 +112,7 @@ html {
 }
 
 body {
-  background: var(--rich-black-fogra-39);
+  background: var(--fundo);
   min-width: 280px;
 }
 
@@ -126,7 +127,7 @@ button, a, input, [tabindex] { outline-offset: 4px; }
 
 ::-webkit-scrollbar-thumb { background: var(--golden-puppy); }
 
-::-webkit-scrollbar-thumb:hover { --golden-puppy: hsl(47, 100%, 40%); }
+::-webkit-scrollbar-thumb:hover { --golden-puppy: hsl(207, 100%, 40%); }
 
 ::-webkit-scrollbar-button { height: 5px; }
 
@@ -201,6 +202,9 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header .logo h2{
+  color: var(--white);
 }
 
 .header-nav-wrapper { position: relative; }
@@ -284,13 +288,13 @@ header .container {
 }
 
 .hero-banner {
-  border: 20px solid var(--eerie-black-1);
+  border: 20 solid var(--black);
   border-radius: 50%;
   overflow: hidden;
 }
 
 .hero-banner img {
-  width: 100%;
+  width: 34vh;
   height: 100%;
   object-fit: cover;
 }
@@ -439,6 +443,9 @@ header .container {
   justify-content: space-between;
   align-items: center;
   font-size: var(--fs-8);
+}
+footer h2{
+  color: var(--white);
 }
 
 .tag {
@@ -628,7 +635,7 @@ header .container {
   font-size: var(--fs-10);
   font-weight: var(--fw-700);
   color: var(--onyx-2);
-  padding: 5px 10px;
+  padding: 5px 20px;
   border-top-right-radius: 10px;
   border: 7px solid var(--eerie-black-2);
 }
@@ -676,7 +683,7 @@ header .container {
 \*-----------------------------------*/
 
 .footer-top {
-  background: var(--eerie-black-2);
+  background: var(--fundo2);
   padding: 60px 0;
 }
 
@@ -758,7 +765,7 @@ header .container {
 .footer-item:hover .footer-link { transform: translateX(10px); }
 
 .footer-bottom {
-  background: var(--eerie-black-1);
+  background: var(--fundo2);
   padding: 25px 0;
   color: var(--quick-silver);
 }
